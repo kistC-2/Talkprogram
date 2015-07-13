@@ -5,12 +5,26 @@
 <title></title>
 <style type="text/css">
 
-.center	{
-	text-align: center;
-	margin-top: 200px;
+.box	{
+		width: 821px;
+		margin: 0 auto;
+		position: relative;
 }
 
-.btn1, .btn2, .btn3	{
+.center	{
+	width: 100%;
+	text-align: center;
+	padding-top: 200px;
+}
+
+.btn	{
+		position: absolute;
+		top: 525px;
+		left: 1px;
+		width: 820px;
+}
+
+.btn1	{
 		text-align: left;
 		font-weight: bold;
   		font-size: 30px;
@@ -18,29 +32,8 @@
   		background: rgba(0,0,255,0.2);
  		border: 1px solid #000000;
  		color: #ffffff;
- 		width: 820px;
+ 		width: 100%;
   		padding: 10px;
-}
-
-.btn1	{
-		position:absolute;
-        z-index:1;
-        top: 525px;
-        left: 550px;
-}
-
-.btn2	{
-		position:absolute;
-        z-index:1;
-        top: 580px;
-        left: 550px;
-}
-
-.btn3	{
-		position:absolute;
-        z-index:1;
-        top: 635px;
-        left: 550px;
 }
 
 </style>
@@ -50,12 +43,38 @@
 </head>
 
 <body>
+
+<script type="text/javascript">
+<!--
+function showimg1(){
+  document.area1.src = "images/karig1.PNG";
+  document.getElementById("area2").href = "リンク先URL";
+}
+
+function showimg2(){
+  document.area1.src = "images/karig2.PNG";
+  document.getElementById("area2").href = "リンク先URL";
+}
+
+function showimg3(){
+  document.area1.src = "images/.jpg";
+  document.getElementById("area2").href = "リンク先URL";
+}
+-->
+</script>
+
+<div class="box">
 <div class="center">
-<img src="images/karig1.PNG" alt="">
+<a href="最初のリンク先URL" id="area2" >
+  <img src="images/karig1.PNG" name="area1">
+</a>
 </div>
 
-<input class="btn1" type="button" value="1." >
-<input class="btn2" type="button" value="2." >
-<input class="btn3" type="button" value="3." >
+<div class="btn">
+<input class="btn1" type="button" onclick="showimg1()" value="1.">
+<input class="btn1" type="button" onclick="showimg2()" value="2.">
+<input class="btn1" type="button" onclick="showimg3()" value="3.">
+</div>
+</div>
 </body>
 </html>

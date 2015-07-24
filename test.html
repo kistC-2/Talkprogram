@@ -1,72 +1,37 @@
-<!DOCTYPE html>
+ï»¿<!DOCTYPE html>
 <html lang="ja">
 <head>
 <meta charset="UTF-8">
-<title>‰ï˜bƒvƒƒOƒ‰ƒ€</title>
-<style>
-
-</style>
-<script type="text/javascript">
-<!--
-var name = null;
-function dialog() {
-	var q = document.myform.myinput.value;
-	var a = "";
-	document.myform.myinput.value;
-	if(r=q.match(/^‚»‚ê‚Í(.*)$/)) q=r[1];
-	if(!q) {
-		return false;
-	} else if(!name){
-		if(r = q.match(/^(Ž„)(.*)$/)) q=r[3];
-		name=q; a='‚±‚ñ‚É‚¿‚Í'+ name +'‚³‚ñ';
-		}else if(q.match(/^(‚³‚æ‚È‚ç|‚³‚æ‚¤‚È‚ç)$/i)){
-		a='‚³‚æ‚È‚ç';
-		}else if(q.match(/^(‚¨‚Í‚æ‚¤|‚¨‚Í‚æ[)$/i)){
-		a='‚¨‚Í‚æ‚¤';
-		}else if(q.match(/^(‚±‚ñ‚É‚¿‚Í|‚±‚ñ|‚±‚ñ‚¿‚Í|‚±‚ñ‚É‚¿‚í|‚±‚ñ‚¿‚í)$/i)){
-		a='‚±‚ñ‚É‚¿‚Í';
-		}else if(q.match(/^(‚Â‚©‚ê‚½|‚¨‚Â‚©‚ê)$/i)){
-		a='‚¨‚Â‚©‚ê‚³‚Ü';
-		}else if(q.match(/^(‚ ‚è‚ª‚Æ‚¤|‚ ‚è‚ª‚Æ)$/i)){
-		a='‚Ç‚¤‚¢‚½‚µ‚Ü‚µ‚ÄI';
-		}else if(q.match(/^(‚©‚í‚¢‚¢|‚©‚Á‚±‚¢‚¢|‚©‚í‚¢[|‰Âˆ¤‚¢|‚©‚Á‚±‚¢[)$/i)){
-		a='‚ ‚ñ‚â‚Æ';
-		}else if(q.match(/^(‚æ‚ë‚µ‚­|‚æ‚ë|‚æ‚ë‚µ‚­‚¨‚Ë‚ª‚¢‚µ‚Ü‚·)$/i)){
-		a='‚æ‚ë‚µ‚­‚Ëô';
-		}else {
-		a=q+'‚¾‚ËII';
-		}
-		document.myform.mytextarea.value = a;
-		return false;
-		}
-	
-</script>
+<title>å¤•é£¯ã®ãƒ¡ãƒ‹ãƒ¥ãƒ¼æ•™ãˆã¦ï½™</title>
+<link rel="stylesheet" href="style.css">
+<script src="jquery-1.11.3.js"></script>
+<script src="talk.js"></script>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+
 <header>
-<h1>‰ï˜bƒvƒƒOƒ‰ƒ€</h1>
+<h1>ãƒ¡ãƒ‹ãƒ¥ãƒ¼ã‚’èžãå‡ºã›ãŸã‚‰å‹ã¡()</h1>
 </header>
 
 <article>
 
-<div id="textarea">
-<div class="textinner">
+
+<div class="box">
+<div class="center">
+<img src="images/normal.png" alt="" width="70%" height="70%" name="men"><br>
+<form name="form">
 </div>
-<!--/textinner-->
-<div class="triangle"></div>
+
+<textarea name="comspeak"></textarea>
+
+<form>
+<input type="text" name="serifu" value="">
+<input type="button" value="è©±ã™" onclick="speak(); change()"><br>
+</form>
 </div>
-<!--/textarea-->
-<img src="hito.jpg" alt=""><br>
-<form name="myform" action onsubmit="return dialog();">
-<p>
-<textarea name="mytextarea" cols="80" rows="1" disabled="disabled"></textarea>
-</p>
-<p>
-<input name="myinput" size="60">
-</p>
-</button>
+
 </form>
 </article>
 </body>

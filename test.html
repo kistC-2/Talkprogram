@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>会話プログラム</title>
+<style>
+
+</style>
+<script type="text/javascript">
+<!--
+var name = null;
+function dialog() {
+	var q = document.myform.myinput.value;
+	var a = "";
+	document.myform.myinput.value;
+	if(r=q.match(/^それは(.*)$/)) q=r[1];
+	if(!q) {
+		return false;
+	} else if(!name){
+		if(r = q.match(/^(私)(.*)$/)) q=r[3];
+		name=q; a='こんにちは'+ name +'さん';
+		}else if(q.match(/^(さよなら|さようなら)$/i)){
+		a='さよなら';
+		}else if(q.match(/^(おはよう|おはよー)$/i)){
+		a='おはよう';
+		}else if(q.match(/^(こんにちは|こん|こんちは|こんにちわ|こんちわ)$/i)){
+		a='こんにちは';
+		}else if(q.match(/^(つかれた|おつかれ)$/i)){
+		a='おつかれさま';
+		}else if(q.match(/^(ありがとう|ありがと)$/i)){
+		a='どういたしまして！';
+		}else if(q.match(/^(かわいい|かっこいい|かわいー|可愛い|かっこいー)$/i)){
+		a='あんやと';
+		}else if(q.match(/^(よろしく|よろ|よろしくおねがいします)$/i)){
+		a='よろしくね♪';
+		}else {
+		a=q+'だね！！';
+		}
+		document.myform.mytextarea.value = a;
+		return false;
+		}
+	
+</script>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+<h1>会話プログラム</h1>
+</header>
+
+<article>
+
+<div id="textarea">
+<div class="textinner">
+</div>
+<!--/textinner-->
+<div class="triangle"></div>
+</div>
+<!--/textarea-->
+<img src="hito.jpg" alt=""><br>
+<form name="myform" action onsubmit="return dialog();">
+<p>
+<textarea name="mytextarea" cols="80" rows="1" disabled="disabled"></textarea>
+</p>
+<p>
+<input name="myinput" size="60">
+</p>
+</button>
+</form>
+</article>
+</body>
+</html>

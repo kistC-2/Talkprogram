@@ -20,8 +20,7 @@ function speak() {
 			com='和食かぁ･･･。ちなみに肉と魚、どっちの気分？(※和の肉or和の魚)';
 				}else if
 				(player.match(/^(和の肉)$/i)){
-				com='それならこれらはどうかな？OK？';
-				document.write('<img src="images/syougayaki.jpg" width="30" height="30" />');
+				com="それならこれらはどうかな？OK？";
 				}else if
 				(player.match(/^(和の魚)$/i)){
 				com='それならこれらはどうかな？OK？';
@@ -73,7 +72,7 @@ function speak() {
 		}
 		
 myImage = new Array(
-	"images/fun1.png", "images/happy1.png", "images/normal1.png", "images/sad1.png"
+	"images/fun.png", "images/happy.png", "images/normal.png", "images/sad.png"
 );
 function change() {
 	rnd = Math.floor(Math.random() * myImage.length);

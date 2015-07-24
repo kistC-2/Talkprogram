@@ -8,22 +8,30 @@
 
 textarea	{border: solid 1px #ffffff;		
 			background-color: #ffffff;
-			position: 10px 0 0 800px}
+			margin-left: 350px;
+			margin-top: -450px;
+			float: left;
+			font-size: 40px;
+			}
 
 .box	{
 		width: 844px;
-		margin: 0 10 auto;
+		margin: 0 auto;
 		position: relative;
 }
 
 .center	{
 	width: 100%;
+	
 	text-align: center;
 	padding-top: 0;
-	background-image: url(images/karig1.PNG);
+	background-image: url(images/kitchen.jpg);
 	background-repeat: no-repeat;
 	background-size: 820px 496px;
 }
+
+.center img {margin-top: 139px;
+			margin-left: -400px}
 
 header {text-align: center}
 

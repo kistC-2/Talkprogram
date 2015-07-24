@@ -1,0 +1,30 @@
+.com		{margin-right: auto;
+			margin-left: auto;}
+
+
+.player		{margin-right: auto;
+			margin-left: auto;
+			}
+
+textarea	{border: solid 1px #ffffff;		
+			background-color: #ffffff;
+			position: 10px 0 0 800px}
+
+.box	{
+		width: 844px;
+		margin: 0 10 auto;
+		position: relative;
+}
+
+.center	{
+	width: 100%;
+	text-align: center;
+	padding-top: 0;
+	background-image: url(images/karig1.PNG);
+	background-repeat: no-repeat;
+	background-size: 820px 496px;
+}
+
+header {text-align: center}
+
+article {text-align: center}

@@ -23,7 +23,9 @@ Talkprogram
 ------
 + EmEditor
 + JavaScript
-+ 
++ Illustrator
++ Photoshop
+
 
 
 ### Ql‘—¿ ###

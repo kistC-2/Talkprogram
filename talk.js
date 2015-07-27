@@ -7,7 +7,7 @@ function speak() {
 		return false;
 		
 		}else if
-			(player.match(/^(ただいま|ただ)$/i)){
+		(player.match(/^(ただいま|ただ)$/i)){
 			com='お帰りなさい～！夕飯はもう食べた？';
 		}else if
 			(player.match(/^(食べた|たべた|食べたよ|たべたよ)$/i)){
@@ -43,7 +43,7 @@ function speak() {
 				(player.match(/^(中華の肉)$/i)){
 				com='それならバンバンジーはどうかな？';
 				}else if
-				(player.match(/^(中華の魚介)$/i)){
+				(player.match(/^(中華の魚介|魚介|ぎょかい|魚介系)$/i)){
 				com='それならエビチリはどうかな？';
 				
 			}else if
@@ -52,6 +52,10 @@ function speak() {
 		}else if
 		(player.match(/^(いいよ|OK|ok|おｋ|いいね)$/i)){
 			com='よかった！';
+			
+		}else if
+		(player.match(/^(微妙|びみょー|ビミョー|イマイチ|いまいち)$/i)){
+			com='僕はこれがいいと思ったんだけどね…(苦笑)';
 			
 		}else if
 		(player.match(/^(どっちもいや|どっちも嫌|それ以外|どれもいや)$/i)){
